@@ -10,4 +10,5 @@
 -----------------------------------------------------------
 ## 타입스크립트 관련 사이트 (참조)
 https://ahnheejong.gitbook.io/ts-for-jsdev/intro
+
 https://www.typescriptlang.org/
