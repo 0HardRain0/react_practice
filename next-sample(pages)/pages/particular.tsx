@@ -13,6 +13,8 @@ const BaseLink = (props: BaseLinkProps) => {
     const { className, children, ...rest } = props
     return (
         // Next 13버전에서는 Link에 a태그를 넣지 말아야 하며 a태그가 필요한 경우에는 legacyBehavior를 꼭 넣어줘야함.
+        // This will change <Link><a id="link">Home</a></Link> to <Link id="link">Home</Link>.
+        // (참조: https://nextjs.org/docs/messages/invalid-new-link-with-extra-anchor)
         <Link {...rest} legacyBehavior>
             <a className={className}>{children}</a>
         </Link>
